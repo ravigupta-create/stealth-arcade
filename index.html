@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- LOGIN SCREEN (Google Sign-In style) -->
+    <div id="login-screen" class="hidden">
+        <div class="login-card">
+            <div class="login-logo">
+                <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+            </div>
+            <h1 class="login-title">Sign in</h1>
+            <p class="login-subtitle">Use your Google Account</p>
+            <div class="login-input-wrap">
+                <input type="password" id="login-pass" placeholder=" " autocomplete="off">
+                <label for="login-pass">Password</label>
+            </div>
+            <div id="login-error"></div>
+            <div class="login-forgot">
+                <a href="javascript:void(0)">Forgot password?</a>
+            </div>
+            <div class="login-actions">
+                <span class="login-create">Create account</span>
+                <button id="login-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
     <!-- PANIC SCREEN: Fake Gmail -->
     <div id="panic-screen" class="hidden">
         <div class="gmail-header">
@@ -118,7 +141,7 @@
     </div>
 
     <!-- MAIN PORTAL -->
-    <div id="portal">
+    <div id="portal" class="hidden">
         <header id="portal-header">
             <div class="header-left">
                 <div class="logo">
@@ -134,6 +157,7 @@
             </div>
             <div class="header-right">
                 <span class="stealth-hint" title="Press backtick (`) or Escape for stealth mode">&#128274; Stealth</span>
+                <button id="sound-toggle" title="Unmute sounds">&#128263;</button>
                 <button id="theme-toggle" title="Toggle theme">&#9790;</button>
             </div>
         </header>
@@ -145,14 +169,18 @@
             <button class="cat-btn" data-cat="word">Word</button>
             <button class="cat-btn" data-cat="strategy">Strategy</button>
             <button class="cat-btn" data-cat="action">Action</button>
+            <button class="cat-btn" data-cat="math">Math</button>
             <button class="cat-btn" data-cat="favorites">&#9733; Favorites</button>
             <button class="cat-btn" data-cat="recent">&#128336; Recent</button>
         </nav>
 
+        <div id="featured-carousel"></div>
+        <div id="stats-dashboard"></div>
+
         <main id="game-grid"></main>
 
         <footer id="portal-footer">
-            <span>GameVault &mdash; 30 Games, Zero Ads, 100% Free</span>
+            <span>GameVault &mdash; 52 Games, Zero Ads, 100% Free</span>
         </footer>
     </div>
 
@@ -177,9 +205,15 @@
     <script src="utils.js"></script>
     <script src="portal.js"></script>
     <script src="games-arcade.js"></script>
+    <script src="games-arcade2.js"></script>
     <script src="games-puzzle.js"></script>
+    <script src="games-puzzle2.js"></script>
     <script src="games-word.js"></script>
+    <script src="games-word2.js"></script>
     <script src="games-strategy.js"></script>
+    <script src="games-strategy2.js"></script>
     <script src="games-action.js"></script>
+    <script src="games-action2.js"></script>
+    <script src="games-math.js"></script>
 </body>
 </html>
