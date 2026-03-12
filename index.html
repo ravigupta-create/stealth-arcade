@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- LOGIN SCREEN (Google Sign-In style) -->
+    <!-- LOGIN SCREEN (GameVault access) -->
     <div id="login-screen" class="hidden">
         <div class="login-card">
             <div class="login-logo">
-                <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+                <span class="g-blue">G</span><span class="g-red">a</span><span class="g-yellow">m</span><span class="g-blue">e</span><span class="g-green">V</span><span class="g-red">ault</span>
             </div>
-            <h1 class="login-title">Sign in</h1>
-            <p class="login-subtitle">Use your Google Account</p>
+            <h1 class="login-title">Welcome</h1>
+            <p class="login-subtitle">Enter your access code</p>
             <div class="login-input-wrap">
-                <input type="password" id="login-pass" placeholder=" " autocomplete="off">
-                <label for="login-pass">Password</label>
+                <input type="text" id="login-pass" placeholder=" " autocomplete="off" spellcheck="false">
+                <label for="login-pass">Access code</label>
             </div>
             <div id="login-error"></div>
             <div class="login-forgot">
-                <a href="javascript:void(0)">Forgot password?</a>
+                <a href="javascript:void(0)">Hint?</a>
             </div>
             <div class="login-actions">
-                <span class="login-create">Create account</span>
-                <button id="login-btn">Next</button>
+                <span class="login-create"></span>
+                <button id="login-btn">Enter</button>
             </div>
         </div>
     </div>
@@ -170,6 +170,8 @@
             <button class="cat-btn" data-cat="strategy">Strategy</button>
             <button class="cat-btn" data-cat="action">Action</button>
             <button class="cat-btn" data-cat="math">Math</button>
+            <button class="cat-btn" data-cat="sports">Sports</button>
+            <button class="cat-btn" data-cat="racing">Racing</button>
             <button class="cat-btn" data-cat="favorites">&#9733; Favorites</button>
             <button class="cat-btn" data-cat="recent">&#128336; Recent</button>
         </nav>
@@ -206,8 +208,10 @@
     <script src="portal.js"></script>
     <script src="games-arcade.js"></script>
     <script src="games-arcade2.js"></script>
+    <script src="games-arcade3.js"></script>
     <script src="games-puzzle.js"></script>
     <script src="games-puzzle2.js"></script>
+    <script src="games-puzzle3.js"></script>
     <script src="games-word.js"></script>
     <script src="games-word2.js"></script>
     <script src="games-strategy.js"></script>
@@ -215,5 +219,9 @@
     <script src="games-action.js"></script>
     <script src="games-action2.js"></script>
     <script src="games-math.js"></script>
+    <script src="games-strategy3.js"></script>
+    <script src="games-word3.js"></script>
+    <script src="games-sports.js"></script>
+    <script src="games-racing.js"></script>
 </body>
 </html>
