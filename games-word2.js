@@ -713,24 +713,8 @@ class CrosswordMiniGame extends CanvasGame {
             },
 
             // PUZZLE 5
-            // Across: GRAIN(r0,c1), OLIVE(r2,c1), VERSE(r4,c1)
-            // Down: GOVER -> no. Let me pick: col1 = G,_,O,_,V => not clean.
-            // Try: BRAVE(r0,c1), RIDER(r2,c1), EMPTY(r4,c1) => col1: B,_,R,_,E = not a word.
-            // Try: BLAZE(r0,c1), LIVER(r2,c1), EVENT(r4,c1) => col1: B,_,L,_,E = BILE? No.
-            // Try: THREE words sharing col 1:
-            // GHOST(r0,c1), RIVER(r2,c1), EATER(r4,c1) => col1: G,_,R,_,E = not a word.
-            // WORTH(r0,c1), ORGAN(r2,c1), RIDGE(r4,c1) => col1: W,_,O,_,R = DONOR? No.
-            // SHADE(r0,c1), HOUSE(r2,c1), ALONE(r4,c1) => col1: S,_,H,_,A = SHA? No.
-            // SHINE(r0,c1), TREAT(r2,c1), ARENA(r4,c1) => col1: S,_,T,_,A = STAIR? No, just S,T,A.
-            // col1 must be 5 letters: rows 0,1,2,3,4.
-            // FLAME(r0,c1), LEMON(r2,c1), ANGER(r4,c1) => col1: F,_,L,_,A = not a word.
-            // How about: TOWER(col1) = T,O,W,E,R
-            // r0 c1=T: TRAIL(r0,c1)
-            // r1 c1=O
-            // r2 c1=W: WASTE(r2,c1)
-            // r3 c1=E
-            // r4 c1=R: RIDER(r4,c1)
-            // Across: TRAIL, WASTE, RIDER. Down: TOWER. All real words!
+            // Across: TRAIL(r0,c1), WASTE(r2,c1), RIDER(r4,c1)
+            // Down: TOWER(col1: T,O,W,E,R)
             {
                 grid: [
                     ['#','T','R','A','I','L','#'],
@@ -754,13 +738,8 @@ class CrosswordMiniGame extends CanvasGame {
             },
 
             // PUZZLE 6
-            // Down: FLAME(col1) = F,L,A,M,E
-            // r0: FROST(r0,c1)? No, c1=F. FROST starts with F at c1. F,R,O,S,T.
-            // r2: ADMIT? No c1=A. A,D,M,I,T. ADMIT at c1. Good.
-            // r4: ELITE? No c1=E. E,L,I,T,E. ELITE at c1. Good.
-            // r1: c1=L. Just L alone.
-            // r3: c1=M. Just M alone.
-            // Across: FROST, ADMIT, ELITE. Down: FLAME.
+            // Across: FROST(r0,c1), ADMIT(r2,c1), ELITE(r4,c1)
+            // Down: FLAME(col1: F,L,A,M,E)
             {
                 grid: [
                     ['#','F','R','O','S','T','#'],

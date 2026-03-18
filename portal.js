@@ -277,7 +277,7 @@ const Portal = {
             this.portalEl.classList.add('hidden');
             this.playerEl.classList.add('hidden');
 
-            document.title = 'Inbox (3) - MailBox';
+            document.title = 'Inbox (3) - Gmail';
             if (this.currentGame && this.currentGame.instance) {
                 this.currentGame.instance.stop();
             }
@@ -290,7 +290,7 @@ const Portal = {
             } else {
                 this.portalEl.classList.remove('hidden');
             }
-            document.title = 'Inbox (3) - MailBox';
+            document.title = 'Inbox (3) - Gmail';
         }
     },
 
